@@ -1,0 +1,60 @@
+:root {
+  --backgroundBlackMain: #1e1e1e;
+  --backgroundBlackSub: #313131;
+  --introCardColor:#313131;
+  --orange: #FF7A00;
+  --theWhite: #ffffff;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: var(--theWhite);
+    background: var(--backgroundBlackMain);
+  }
+}
+.container{
+  padding: 0 5%;
+  min-height:90vh;
+}
+.navContainer{
+  background-color:var(--backgroundBlackSub);
+}
+.navRightInnerContainerMobile{
+  background-color: var(--backgroundBlackSub);
+}
+.connectCard{
+  background-color: var(--introCardColor);
+}
+/* .cardLeft{
+  border-right: 2px dashed var(--theWhite);
+} */
+
+
+@media only screen and (max-width: 720px) {
+  .container{
+    padding: 0 5%;
+  }
+}

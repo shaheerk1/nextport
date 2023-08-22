@@ -1,0 +1,201 @@
+.container{
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+}
+
+.left{
+    width: 65%;
+    padding: 30px 0;
+}
+.introText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.introSubText{
+    opacity: 93%;
+    line-height: 25px;
+}
+.right{
+    width: 35%;
+    background-color: var(--backgroundBlackMain);
+    height: auto;
+    padding: 5px;
+    
+    margin: 10px 0 40px 0;
+}
+.connectCard{
+    width: 100%;
+    height: 15vw;
+}
+.mainCard{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0,0,0,0.9);
+    box-shadow: 2px 4px 0px 0px rgba(0,0,0,0.9);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    container-type: inline-size;
+}
+
+.mainCard::before{
+    position: absolute;
+    content: "";
+    background-color: var(--backgroundBlackMain);
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    left: 60%;
+    border-left: 1px solid rgba(0,0,0,0.9);
+    border-bottom: 1px solid rgba(0,0,0,0.9);
+    transform: rotate(-45deg);
+}
+.mainCard::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 8vw;
+    left: 63%;
+    border-left: 2px dashed var(--theWhite);
+}
+
+.cardLeft{
+    width: 63.9%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding-left:15%;
+}
+.cardRight{
+    width: 36.1%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gmailButton{
+    width: 100px;
+    padding: 5px 0;
+    background-color: var(--backgroundBlackSub);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.9);
+    box-shadow: 2px 4px 0px 0px rgba(0,0,0,0.9);
+}
+
+.gmailButton:active{
+    background-color: var(--backgroundBlackMain);
+}
+.gmailImage{
+    width: 30%;
+    height: auto;
+}
+
+.twoLinks{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    height: 40px;
+    bottom: -20px;
+    left: 55%;
+}
+.githubButton{
+    
+    padding: 5px 10px;
+    background-color: var(--backgroundBlackSub);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.9);
+    box-shadow: 2px 4px 0px 0px rgba(0,0,0,0.9);
+}
+.linkedinButton{
+   
+    padding: 5px 10px;
+    background-color: var(--backgroundBlackSub);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.9);
+    box-shadow: 2px 4px 0px 0px rgba(0,0,0,0.9);
+}
+
+.githubButton:active{
+    background-color: var(--backgroundBlackMain);
+}
+.linkedinButton:active{
+    background-color: var(--backgroundBlackMain);
+}
+
+.cvButton{
+    width: 110px;
+    padding: 5px 10px;
+    background-color: var(--backgroundBlackSub);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.9);
+    box-shadow: 1px 2px 0px 0px rgba(0,0,0,0.9);
+}
+
+.cvButton:active{
+    background-color: var(--backgroundBlackMain);
+}
+
+.cvImg{
+    filter:invert(1) ;
+    width: 20px;
+    height: 20px;
+}
+@media only screen and (max-width: 1024px) {
+    .container{
+       flex-direction: column;
+    }
+    .right{
+        width: 100%;
+        padding: 0px;
+        margin: 10px 0 40px 0;
+    }
+    .left{
+        width: 100%;
+        margin-top: 10px;
+        padding: 30px 0;
+    }
+    .connectCard{
+        width: 100%;
+        height: 170px;
+    }
+    .mainCard::after{
+       
+        height: 100px;
+        left: 61%;
+    }
+}
+@media only screen and (max-width: 400px) {
+   
+    .mainCard::after{
+       
+        height: 100px;
+        left: 62%;
+    }
+}
+@container (max-width: 580px) {
+   
+    .twoLinks{
+        display: flex;
+        flex-direction: column;
+        width: 90px;
+        left: 70%;
+        bottom: 10px;
+        gap: 10px;
+    }
+}
+
